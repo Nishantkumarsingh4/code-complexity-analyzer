@@ -313,3 +313,57 @@ body {
     justify-content: center;
   }
 }
+/* Extra Mobile Responsiveness Fix */
+@media (max-width: 480px) {
+  .app-root {
+    padding: 1rem;
+  }
+
+  .app-header h1 {
+    font-size: 1.4rem;
+    text-align: center;
+    line-height: 1.3;
+  }
+
+  .header-actions {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .main-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .editor-pane, 
+  .result-pane {
+    padding: 1rem;
+  }
+
+  .sample-buttons {
+    flex-wrap: wrap;
+    gap: 6px;
+    padding: 6px;
+    justify-content: center;
+    max-width: 100%;
+  }
+
+  .sample-buttons button {
+    font-size: 0.75rem;
+    padding: 5px 10px;
+  }
+
+  .btn {
+    width: 100%;
+    justify-content: center;
+    font-size: 0.85rem;
+    padding: 0.6rem;
+  }
+
+  .results {
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+}
